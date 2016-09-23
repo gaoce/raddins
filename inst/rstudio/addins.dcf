@@ -1,0 +1,4 @@
+Name: Toggle Text Case
+Description: toggle the case of selected text in editor
+Binding: toggle_case
+Interactive: true
