@@ -2,3 +2,23 @@ Name: Toggle Text Case
 Description: toggle the case of selected text in editor
 Binding: toggle_case
 Interactive: false
+
+Name: Extend Selection Above
+Description: Add one select above
+Binding: add_one_sel_top
+Interactive: false
+
+Name: Extend Selection Below
+Description: Add one select blew
+Binding: add_one_sel_end
+Interactive: false
+
+Name: Remove top selection
+Description: Remove top selection
+Binding: remove_one_sel_top
+Interactive: false
+
+Name: Remove bottom selection
+Description: Remove bottom selection
+Binding: remove_one_sel_end
+Interactive: false
