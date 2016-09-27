@@ -22,3 +22,8 @@ Name: Remove bottom selection
 Description: Remove bottom selection
 Binding: remove_one_sel_end
 Interactive: false
+
+Name: View Selected Object
+Description: View Selected Object
+Binding: view_name
+Interactive: false
