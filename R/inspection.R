@@ -28,5 +28,5 @@ view_name = function() {
     pos = pos[1]
     obj_name = substr(line, locs[pos, 1], locs[pos, 2])
     expr_str = sprintf('View(%s)', obj_name)
-    eval(parse(text = expr_str), envir = globalenv())
+    try(eval(parse(text = expr_str), envir = globalenv()), silent = T)
 }
