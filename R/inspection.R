@@ -1,6 +1,7 @@
 #' View Selected Object
 #' View Selected Object
 #'
+#' @import stringr
 #' @export
 view_name = function() {
     context = rstudioapi::getSourceEditorContext()
