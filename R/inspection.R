@@ -17,7 +17,7 @@ view_name = function() {
     line = context$contents[pos_frt[1]]
 
     # Get location of valid variable names
-    locs = str_locate_all(line, '[a-zA-Z][a-zA-Z0-9_\\.]+')[[1]]
+    locs = stringr::str_locate_all(line, '[a-zA-Z][a-zA-Z0-9_\\.]+')[[1]]
 
     pos = which(locs[, 1] <= pos_frt[2] & locs[, 1] <= pos_end[2] &
                 locs[, 2] >= (pos_frt[2] - 1) & locs[, 2] >= (pos_end[2] - 1))
