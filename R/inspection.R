@@ -18,7 +18,7 @@ view_name = function() {
     line = context$contents[pos_frt[1]]
 
     # Get location of valid variable names
-    locs = stringr::str_locate_all(line, '[a-zA-Z][a-zA-Z0-9_\\.]+')[[1]]
+    locs = stringr::str_locate_all(line, '[a-zA-Z][a-zA-Z0-9_\\.]*')[[1]]
 
     pos = which(locs[, 1] <= pos_frt[2] & locs[, 1] <= pos_end[2] &
                 locs[, 2] >= (pos_frt[2] - 1) & locs[, 2] >= (pos_end[2] - 1))
@@ -26,8 +26,14 @@ view_name = function() {
     # Selection cross multiple tokens, abort
     if (length(pos) == 0) return()
 
+    # Construct evaluation string
     pos = pos[1]
     obj_name = substr(line, locs[pos, 1], locs[pos, 2])
     expr_str = sprintf('View(%s)', obj_name)
-    try(eval(parse(text = expr_str), envir = globalenv()), silent = T)
+
+    # Evaluation and capture the error
+    capture.output(
+        try(eval(parse(text = expr_str), envir = globalenv()), silent = T)
+    )
+    invisible()
 }
