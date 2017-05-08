@@ -15,4 +15,3 @@ newly shrunken ranges
 \description{
 remove current selection by `ext` amount
 }
-

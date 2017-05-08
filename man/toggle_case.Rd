@@ -9,4 +9,3 @@ toggle_case()
 \description{
 Toggle the case of selected text in editor
 }
-

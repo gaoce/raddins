@@ -15,4 +15,3 @@ new extened ranges (including the old ones)
 \description{
 extend current selection by `ext` number of lines
 }
-

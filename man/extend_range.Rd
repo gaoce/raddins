@@ -18,4 +18,3 @@ a new list of extended range(s)
 Extend the current single-line range to lines above or below,
     spanning the same columns
 }
-

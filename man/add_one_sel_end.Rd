@@ -12,4 +12,3 @@ new ranges for extended selection
 \description{
 extend selection one line down
 }
-

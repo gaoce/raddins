@@ -2,13 +2,10 @@
 % Please edit documentation in R/inspection.R
 \name{view_name}
 \alias{view_name}
-\title{View Selected Object
-View Selected Object}
+\title{View Selected Object}
 \usage{
 view_name()
 }
 \description{
 View Selected Object
-View Selected Object
 }
-

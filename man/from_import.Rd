@@ -22,4 +22,3 @@ It attempts to mimic python's `import ... from ...` construct
 from_import('dplyr', 'select', 'dselect')
 from_import('AnnotationDbi', 'select', 'aselect')
 }
-

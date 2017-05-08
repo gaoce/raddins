@@ -12,4 +12,3 @@ new ranges for shrunken selection
 \description{
 remove bottom selection
 }
-
