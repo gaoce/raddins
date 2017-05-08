@@ -21,6 +21,21 @@ view_name = function() {
     )
     invisible()
 }
+
+#' Echo the Class of Object Under Cursor to Console.
+#'
+#' @export
+echo_class = function() {
+    # Get the object name near the cursor
+    obj_name = get_name_near_cursor()
+
+    if (is.null(obj_name) || (!exists(obj_name))) return()
+
+    print(class(get(obj_name)))
+
+    invisible()
+}
+
 #' Get the object name near the cursor.
 #'
 #' @keywords internal

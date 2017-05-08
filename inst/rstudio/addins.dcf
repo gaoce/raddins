@@ -27,3 +27,8 @@ Name: View Selected Object
 Description: View Selected Object
 Binding: view_name
 Interactive: false
+
+Name: Echo class info
+Description: Get the class information for the object under the cursor
+Binding: echo_class
+Interactive: false
