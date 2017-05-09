@@ -53,7 +53,7 @@ get_name_near_cursor <- function() {
     rng_end = context$selection[[1]]$range$end
 
     # Multiple-line selection, abort
-    if (rng_frt['row'] != pos_end['row']) return(NULL)
+    if (rng_frt['row'] != rng_end['row']) return(NULL)
 
     # Get columns
     col_frt = rng_frt['column']
@@ -85,7 +85,7 @@ get_name_near_cursor <- function() {
     if (length(word_hit) != 1) return(NULL)
 
     # Construct evaluation string
-    obj_name = substr(line, locs[word_hit, 1], locs[word_hit, 2])
+    obj_name = substr(line, word_locs[word_hit, 1], word_locs[word_hit, 2])
 
     return(obj_name)
 }
